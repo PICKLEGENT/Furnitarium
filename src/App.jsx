@@ -1,16 +1,19 @@
 import './App.css';
-import Banner from './components/Banner';
-import Collections from './components/Collections';
-import Discount from './components/Discount';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
 import Header from './components/Header';
+import NotFound from './pages/NotFound';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
     return (
         <>
             <Header />
-            <Banner />
-            <Discount />
-            <Collections />
+            <Routes>
+                <Route path='/Home' Component={Home} />
+                <Route path='/Cart' Component={Cart} />
+                <Route path='*' Component={NotFound} />
+            </Routes>
         </>
     );
 }
