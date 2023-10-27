@@ -1,18 +1,20 @@
 import './App.css';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
-import Header from './components/Header';
 import NotFound from './pages/NotFound';
+import Header from './components/Header';
 import { Route, Routes } from 'react-router-dom';
+import Catalog from './pages/Catalog';
 
 function App() {
     return (
         <>
             <Header />
             <Routes>
-                <Route path='/Home' Component={Home} />
+                <Route path='/' Component={Home} />
+                <Route path='/Catalog' Component={Catalog} />
                 <Route path='/Cart' Component={Cart} />
-                <Route path='*' Component={NotFound} />
+                <Route path='/404' Component={NotFound} />
             </Routes>
         </>
     );

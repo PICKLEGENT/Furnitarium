@@ -10,9 +10,7 @@ function Banner() {
                 <button className='l-section_btn'>shop productivity</button>
             </div>
             <div className='rigth-section'>
-                <div className='r-section_img'>
-                    <img src='#' alt='' />
-                </div>
+                <div className='r-section_img'></div>
             </div>
         </section>
     );

@@ -5,16 +5,16 @@ function Header() {
     return (
         <header>
             <div className='logo'>
-                <Link to='/Home' className='nav-link'>
+                <Link to='/' className='logo-link'>
                     furnitarium
                 </Link>
             </div>
             <NavBar />
             <div className='header-buttons'>
-                <Link to='/Cart' className='nav-link'>
+                <Link to='/Cart' className='header-button-link'>
                     Корзина
                 </Link>
-                <Link to='/' className='nav-link'>
+                <Link to='/' className='header-button-link'>
                     Войти
                 </Link>
             </div>
