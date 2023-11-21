@@ -38,7 +38,7 @@ header {
 }
 
 .left-section,
-.rigth-section {
+.right-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
